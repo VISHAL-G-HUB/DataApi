@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 app.use(cors());
 app.use(bodyParser.json()); 
 app.use(bodyParser.urlencoded({ extended: true }))
-const PORT = process.env.PORT || 3000;
+
 const postsRoute=require('./routes/posts');
 
 app.use('/posts',postsRoute);
@@ -21,7 +21,4 @@ mongoose.connect('mongodb+srv://vishal:vishal@30@cluster0.iae4l.mongodb.net/myFi
 { useNewUrlParser: true },
  ()=>(console.log('connected'))
  );
-app.listen(PORT,()=>{
-    logger.info(`server started at port ${PORT}`);
-}
-);
+app.listen(3000);
