@@ -1,0 +1,41 @@
+const mongoose=require('mongoose');
+
+
+
+const PostSchema =mongoose.Schema({
+     Location:String,
+     Date:String,
+     w2al:String,
+     w3al:String,
+     lcval:String,
+     busal:String,
+     w2ar:String,
+     w3ar:String,
+     lcvar:String,
+     busar:String,
+     w2bl:String,
+     w3bl:String,
+     lcvbl:String,
+     busbl:String,
+     w2br:String,
+     w3br:String,
+     lcvbr:String,
+     busbr:String,
+     w2cu:String,
+     w3cu:String,
+     lcvcu:String,
+     buscu:String,
+     w2cd:String,
+     w3cd:String,
+     lcvcd:String,
+     buscd:String,
+     w2du:String,
+     w3du:String,
+     lcvdu:String,
+     busdu:String,
+     w2dd:String,
+     w3dd:String,
+     lcvdd:String,
+     busdd:String,
+});
+module.exports=mongoose.model('Post',PostSchema);
